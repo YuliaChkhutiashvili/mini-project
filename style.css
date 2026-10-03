@@ -1,0 +1,207 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-size: 20px;
+    color: black;
+    background:
+        radial-gradient(ellipse 80% 50% at 10% 0%,rgb(59, 222, 9) 0%, transparent),
+        radial-gradient(ellipse 60% 40% at 100% 20%,#5cf436 0% , transparent 50% ),
+    #e6ebe8;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+a{
+    color: green;
+    text-emphasis: none;
+}
+a:hover{
+    color: rgb(3, 85, 3);
+}
+/* header */
+.site-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    max-width: 1088px;
+    padding: 18px;
+
+}
+.nav{
+    display: flex;
+    gap: 18px;
+}
+.nav a{
+    color: rgb(2, 58, 2);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.nav a:hover{
+    color: #2a3f23;
+}
+.hero{
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 600px;
+    max-width: 1088px;
+    margin: 0 auto;
+    padding: 24px 0px 8px;
+    gap: 24px;
+}
+.brand{
+    margin: 0 0 12px;
+    font-family: sans-serif;
+    font-weight: 800px;
+    font-size: 40px;
+    line-height: 10px;
+    color: black;
+}
+.hero h1{
+    margin: 0 0.95rem;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    max-width: 18ch;
+}
+.lead{
+    margin: 0 0 28px;
+    max-width: 420px;
+    color: #2a3f23;
+}
+.hero-action{
+    display: flex;
+    gap: 12px;
+}
+.btn{
+    display: flex;
+    padding: 12px 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    background: green;
+    color: wheat;
+}
+.btn:hover{
+    background: #113308;
+    color: aliceblue;
+}
+/*----------sections-------------*/
+
+.about,
+.lessons,
+.projects,
+.contact{
+    max-width: 1088px;
+    margin: 0 auto;
+    padding: 72px 24px;
+}
+.about{
+    border-top: 1px solid #52684c;
+}
+
+.about h2,
+.lessons h2,
+.projects h2,
+.contact h2 {
+    margin: 0 0 12px;
+    font-family: "BPG Glaho Sylfaen", sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+}
+.about p,
+.lessons > .section-note,
+.section-note,
+.contact p {
+    margin: 0 0 24px;
+    max-width: 520px;
+    color: #113e05;
+}
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 24px;
+    margin: 0;
+    padding: o;
+    font-weight: 600;
+    color: red;
+}
+.skills li{
+    position: relative;
+    padding-left: 16px;
+}
+/*----projects---------*/
+
+.projects{
+    background:rgb(207, 205, 205) ;
+    border-top: 1px solid rgb(145, 193, 146);
+}
+.project{
+    padding: 24px 0;
+    border-top: 1px solid rgb(145, 193, 146);
+}
+.project h3{
+    margin: 0 0 6px;
+    font-family: "BPG Glaho Sylfaen", sans-serif;
+    font-size: 22px;
+}
+.project h3 a{
+    color: black;
+    text-decoration: none;
+}
+
+.project h3 a:hover{
+    color: #113308;
+    text-decoration: underline;
+}
+.project p{
+    margin: 0 0 8px;
+    max-width: 600px;
+    color: #113308;
+}
+.meta{
+    font-size: 14px;
+    font-weight: 600;
+    color: #158513 ;
+
+}
+.lessons{
+    border-top: 1px solid #52684c;
+}
+
+.lesson-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+    gap: 24px;
+}
+
+.lesson-card{
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #c6d2c2;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgb(17 51 8 / 10%);
+}
+
+.lesson-card > img{
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.side-content{
+    padding: 24px;
+    background: #158513;
+    border: 2px solid black;
+    border-left:5px solid blue ;
+}
